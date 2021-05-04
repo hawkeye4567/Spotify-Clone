@@ -61,7 +61,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
+    - family: SpotifyFont
+      fonts:
+       - asset: fonts/CircularSpUIAra-Bold.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
@@ -75,3 +78,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/eminem.jpeg
+    - assets/Billie.jpeg
+    - assets/darknet.jpeg
+    - assets/Selection_004.png
+    - assets/download.jpeg
+    - assets/genre.png

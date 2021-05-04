@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'search.dart';
 import 'library.dart';
 import 'premium.dart';
+import 'mainPage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -20,6 +21,7 @@ class _HomePageState extends State<HomePage> {
           canvasColor: Colors.grey[900],
         ),
         child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
           currentIndex: index,
           showUnselectedLabels: true,
           unselectedItemColor: Colors.white54,
@@ -56,7 +58,7 @@ class _HomePageState extends State<HomePage> {
 Widget show(int index) {
   switch (index) {
     case 0:
-      return HomePage();
+      return MainPage();
       break;
     case 1:
       return Search();
